@@ -24,6 +24,24 @@ class Student:
                  f"Завершенные курсы: {', '.join(i for i in self.finished_courses)}"
         return result
 
+    def __eq__(self, other):
+        return Lecturer.avg_grade(self) == Lecturer.avg_grade(other)
+
+    def __ne__(self, other):
+        return Lecturer.avg_grade(self) != Lecturer.avg_grade(other)
+
+    def __lt__(self, other):
+        return Lecturer.avg_grade(self) < Lecturer.avg_grade(other)
+
+    def __le__(self, other):
+        return Lecturer.avg_grade(self) <= Lecturer.avg_grade(other)
+
+    def __gt__(self, other):
+        return Lecturer.avg_grade(self) > Lecturer.avg_grade(other)
+
+    def __ge__(self, other):
+        return Lecturer.avg_grade(self) >= Lecturer.avg_grade(other)
+
 
 class Mentor:
     """Материнский класс для преподавателей"""
@@ -55,6 +73,23 @@ class Lecturer(Mentor):
         result = f'Имя:{self.name}\nФамилия:{self.surname}\nСредняя оценка за лекции:{self.avg_grade()}'
         return result
 
+    def __eq__(self, other):
+        return Lecturer.avg_grade(self) == Lecturer.avg_grade(other)
+
+    def __ne__(self, other):
+        return Lecturer.avg_grade(self) != Lecturer.avg_grade(other)
+
+    def __lt__(self, other):
+        return Lecturer.avg_grade(self) < Lecturer.avg_grade(other)
+
+    def __le__(self, other):
+        return Lecturer.avg_grade(self) <= Lecturer.avg_grade(other)
+
+    def __gt__(self, other):
+        return Lecturer.avg_grade(self) > Lecturer.avg_grade(other)
+
+    def __ge__(self, other):
+        return Lecturer.avg_grade(self) >= Lecturer.avg_grade(other)
 
 class Reviewer(Mentor):
     """Дочерний класс для описания ревьюеров"""
@@ -71,15 +106,6 @@ class Reviewer(Mentor):
     def __str__(self):
         result = f'Имя: {self.name}\nФамилия: {self.surname}'
         return result
-
-
-def compare_student_lecturer(student, lecturer):
-    """Функция сранения студентов и лекторов"""
-    if Lecturer.avg_grade(student) > Lecturer.avg_grade(lecturer):
-        result = f'Средняя оценка студента больше, чем лектора'
-    else:
-        result = f'Средняя оценка лектора больше, чем студента'
-    return result
 
 
 first_student = Student('Иван', 'Петров', 'м')
@@ -153,4 +179,10 @@ print(avg_all(list_of_lecturer, 'Введение в программирова�
 # print(some_reviewer)
 # print(first_lecturer)
 # print(first_student)
-# print(compare_student_lecturer(first_student,first_lecturer))
+is_gt = first_student > first_lecturer
+print(is_gt)
+is_lt = first_student < first_lecturer
+print(is_lt)
+is_eq = first_lecturer == first_student
+print(is_eq)
+

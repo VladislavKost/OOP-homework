@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88fc41f0-80f9-401d-92d7-5c7dd897d83a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/students_and_mentor.py" beforeDir="false" afterPath="$PROJECT_DIR$/students_and_mentor.py" afterDir="false" />
-    </list>
+    <list default="true" id="88fc41f0-80f9-401d-92d7-5c7dd897d83a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +23,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/user/Desktop/Homework/OOP"
+    "last_opened_file_path": "C:/Users/user/Desktop/Практика/ЕГЭ графики функций"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
